@@ -1,0 +1,158 @@
+:root {
+  --danger: #D56062;
+  --info: #067BC2;
+  --success: #75E587;
+  --misc: #ECC30B;
+  --text_light: #FFFFFF;
+  --text_dark: #929393;
+  --border: #535354;
+}
+.Button {
+  border: solid var(--border) 1px;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+.Button.ModalClose {
+  border: solid var(--border) 1px;
+  background-color: white;
+  color: var(--text_dark);
+}
+.DangerModal {
+  background-color: var(--danger);
+}
+.InfoModal {
+  background-color: var(--info);
+}
+.SuccessModal {
+  background-color: var(--success);
+}
+.PageButton {
+  background-color: var(--misc);
+}
+
+:root {
+  --danger: #D56062;
+  --info: #067BC2;
+  --success: #75E587;
+  --misc: #ECC30B;
+  --text_light: #FFFFFF;
+  --text_dark: #929393;
+}
+
+.Modal {
+  position: relative;
+  text-align: center;
+}
+
+.Modal-body {
+  font-size: 14pt;
+  border: solid var(--text_dark) 1px;
+  color: var(--text_light);
+  background: white;
+  height: 200px;
+  width: 300px;
+  top: 30vh;
+  left: 30vw;
+  position: fixed;
+  z-index: 3000;
+  padding: 5px;
+  display: inline-block;
+  vertical-align: center;
+}
+.Modal-backdrop {
+  position: fixed;
+  background: var(--text_dark);
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  height: 100%;
+  width: 100%;
+  opacity: .75;
+}
+.Modal-button {
+  text-align: right;
+  padding-right: 10px;
+}
+.Modal-header {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.rec-modal {
+  background: var(--success);
+  height: 300px;
+  width: 450px;
+}
+.round-modal {
+  background: var(--success);
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.square-modal {
+  background: var(--success);
+  height: 300px;
+  width: 300px;
+}
+.danger-modal {
+  background: var(--danger);
+}
+.info-modal {
+  background: var(--info);
+}
+.success-modal {
+  background: var(--success);
+}
+.teeny-modal {
+  background: var(--info);
+  height: 150px;
+  width: 225px;
+  font-size: 10pt;
+}
+.med-modal {
+  background: var(--info);
+  height: 200px;
+  width: 300px;
+  font-size: 14pt;
+}
+.large-modal {
+  background: var(--info);
+  height: 400px;
+  width: 600px;
+  font-size: 24pt;
+}
+
+:root {
+  --danger: #D56062;
+  --info: #067BC2;
+  --success: #75E587;
+  --misc: #ECC30B;
+  --text_light: #FFFFFF;
+  --text_dark: #929393;
+}
+.App {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  text-align: center;
+}
+.Heading {
+  color: var(--success);
+}
+.Subheading {
+  color: var(--info);
+}
+.ButtonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+
+/*# sourceMappingURL=demo.5d1169ef.css.map*/

@@ -1,0 +1,26 @@
+:root {
+  --danger: #D56062;
+  --info: #067BC2;
+  --success: #75E587;
+  --misc: #ECC30B;
+  --text_light: #FFFFFF;
+  --text_dark: #929393;
+}
+.App {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  text-align: center;
+}
+.Heading {
+  color: var(--success);
+}
+.Subheading {
+  color: var(--info);
+}
+.ButtonContainer {
+  display: flex;
+  justify-content: space-around;
+}

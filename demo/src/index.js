@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import {render} from 'react-dom'
 import { Button } from '../../src';
 import { Modal } from '../../src';
+import './index.css';
+import './logo.png';
 
 class App extends Component {
 
