@@ -1,4 +1,4 @@
-![Alt text](./demo/src/logo.png)
+<img src="./demo/src/logo.png" height="40px" width="40px" text-align="center">
 
 # React CatchyModals
 
