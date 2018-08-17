@@ -1,0 +1,91 @@
+:root {
+  --danger: #D56062;
+  --info: #067BC2;
+  --success: #75E587;
+  --misc: #ECC30B;
+  --text_light: #FFFFFF;
+  --text_dark: #929393;
+}
+
+.Modal {
+  position: relative;
+  text-align: center;
+}
+
+.Modal-body {
+  font-size: 14pt;
+  border: solid var(--text_dark) 1px;
+  color: var(--text_light);
+  background: white;
+  height: 200px;
+  width: 300px;
+  top: 30vh;
+  left: 30vw;
+  position: fixed;
+  z-index: 3000;
+  padding: 5px;
+  display: inline-block;
+  vertical-align: center;
+}
+.Modal-backdrop {
+  position: fixed;
+  background: var(--text_dark);
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  height: 100%;
+  width: 100%;
+  opacity: .75;
+}
+.Modal-button {
+  text-align: right;
+  padding-right: 10px;
+}
+.Modal-header {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.rec-modal {
+  background: var(--success);
+  height: 300px;
+  width: 450px;
+}
+.round-modal {
+  background: var(--success);
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.square-modal {
+  background: var(--success);
+  height: 300px;
+  width: 300px;
+}
+.danger-modal {
+  background: var(--danger);
+}
+.info-modal {
+  background: var(--info);
+}
+.success-modal {
+  background: var(--success);
+}
+.teeny-modal {
+  background: var(--info);
+  height: 150px;
+  width: 225px;
+  font-size: 10pt;
+}
+.med-modal {
+  background: var(--info);
+  height: 200px;
+  width: 300px;
+  font-size: 14pt;
+}
+.large-modal {
+  background: var(--info);
+  height: 400px;
+  width: 600px;
+  font-size: 24pt;
+}

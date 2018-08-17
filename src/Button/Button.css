@@ -1,0 +1,33 @@
+:root {
+  --danger: #D56062;
+  --info: #067BC2;
+  --success: #75E587;
+  --misc: #ECC30B;
+  --text_light: #FFFFFF;
+  --text_dark: #929393;
+  --border: #535354;
+}
+.Button {
+  border: solid var(--border) 1px;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+.Button.ModalClose {
+  border: solid var(--border) 1px;
+  background-color: white;
+  color: var(--text_dark);
+}
+.DangerModal {
+  background-color: var(--danger);
+}
+.InfoModal {
+  background-color: var(--info);
+}
+.SuccessModal {
+  background-color: var(--success);
+}
+.PageButton {
+  background-color: var(--misc);
+}

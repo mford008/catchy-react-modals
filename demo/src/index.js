@@ -1,13 +1,12 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
-
-import Example from '../../src'
+import { Button } from 'react-catchymodals'
 
 class Demo extends Component {
-  render() {
+  render () {
     return <div>
-      <h1>react-catchymodals Demo</h1>
-      <Example/>
+      <h1>Catchy React Modals</h1>
+      <Button />
     </div>
   }
 }
