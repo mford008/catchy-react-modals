@@ -1,10 +1,39 @@
-# react-catchymodals
+# React CatchyModals
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe react-catchymodals here.
+React CatchyModals is a collection of delightful and catchy modals that can be customized to fit into any project.
+
+The modals have a variety of transitions and styles suited to any in-application notification purpose.
+
+## Demo
+[View Demo](https://mford008.github.io/catchy-react-modals/)
+
+## Installation
+```bash
+npm install --save react-catchymodals   # using NPM
+yarn add react-catchymodals             # using yarn
+```
+## How to Use
+```javascript
+import React, {Component} from 'react';
+import { Modal } from 'react-catchymodals';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Modal
+          className="rec-modal"
+          title="A Rectangular Modal"
+          children="Your text"
+      </div>
+    );
+  }
+}
+```
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
