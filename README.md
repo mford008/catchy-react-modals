@@ -10,6 +10,7 @@ The modals have a variety of transitions and styles suited to any in-application
 
 ## Demo
 [View Demo](https://mford008.github.io/catchy-react-modals/)
+![GIF](http://g.recordit.co/OGsODeoDti.gif)
 
 ## Installation
 ```bash
