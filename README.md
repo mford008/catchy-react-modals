@@ -1,3 +1,5 @@
+![Alt text](./demo/src/logo.png)
+
 # React CatchyModals
 
 [![Travis][build-badge]][build]
@@ -35,6 +37,9 @@ class App extends Component {
   }
 }
 ```
+## Contribute
+Please read CONTRIBUTING.md and submit a pull request to me.
+
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
