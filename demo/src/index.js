@@ -181,7 +181,7 @@ class App extends Component {
                   </div>
             {/*styles*/}
                   <div className="ButtonContainer-Style">
-                    <h2 className="Subheading">Modals by Style: </h2>
+                    <h2 className="Subheading">Modal Purposes: </h2>
                       <Button
                          className='DangerModal'
                          buttonText="Warning Modal"
@@ -218,7 +218,7 @@ class App extends Component {
                           />
                   </div>
                   <div className="ButtonContainer-Texture">
-                    <h2 className="Subheading">More Modal Styles: </h2>
+                    <h2 className="Subheading">Modal Styles: </h2>
                     <Button
                        className="PageButton"
                        buttonText="Sleek Modal"
