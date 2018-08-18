@@ -12,7 +12,7 @@ class Modal extends Component {
     }
 
     return (
-      <div className='Modal' style={style}>
+      <div className={'Modal ' + this.props.className} style={style}>
         <div className='Modal-backdrop'
           onClick={this.props.hideModal} />
         <div className={'Modal-body ' + this.props.className}>
@@ -26,7 +26,7 @@ class Modal extends Component {
             <Button
               className='ModalClose'
               click={this.props.hideModal}
-              buttonText={'Close'} />
+              buttonText={this.props.buttonText} />
           </div>
         </div>
       </div>

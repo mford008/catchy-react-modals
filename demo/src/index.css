@@ -6,6 +6,11 @@
   --text_light: #FFFFFF;
   --text_dark: #929393;
 }
+
+html {
+  background-image: url('bananas.png');
+
+}
 .App {
   display: grid;
   grid-template-columns: auto;
@@ -13,12 +18,21 @@
   grid-row-gap: 20px;
   grid-column-gap: 20px;
   text-align: center;
+  font-family: Helvetica;
 }
 .Heading {
-  color: var(--success);
+  color: var(--text_dark);
+  font-size: 50px;
 }
 .Subheading {
   color: var(--info);
+  font-size: 35px;
+}
+.Para {
+  color: var(--text_dark);
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
 }
 .ButtonContainer {
   display: flex;

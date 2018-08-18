@@ -14,7 +14,12 @@ class App extends Component {
       danger_visible: false,
       info_visible: false,
       success_visible: false,
-      toggle_large: false,
+      small_visible: false,
+      med_visible: false,
+      large_visible: false,
+      sleek_visible: false,
+      colorful_visible: false,
+      peaceful_visible: false,
     }
 
     hideRectangleModal = () => {
@@ -112,23 +117,49 @@ class App extends Component {
       large_visible: !this.state.large_visible,
     })
   }
+  hideSleekModal = () => {
+    this.setState({
+      sleek_visible: false,
+    })
+  }
+  showSleekModal = () => {
+    this.setState({
+      sleek_visible: !this.state.sleek_visible,
+    })
+  }
+  hideColorfulModal = () => {
+    this.setState({
+      colorful_visible: false,
+    })
+  }
+  showColorfulModal = () => {
+    this.setState({
+      colorful_visible: !this.state.colorful_visible,
+    })
+  }
+  hidePeacefulModal = () => {
+    this.setState({
+      peaceful_visible: false,
+    })
+  }
+  showPeacefulModal = () => {
+    this.setState({
+      peaceful_visible: !this.state.peaceful_visible,
+    })
+  }
 
-  toggleLarge = () => {
-    this.setState({
-      toggle_large: !this.state.toggle_large,
-    })
-  }
-  toggleSmall = () => {
-    this.setState({
-      toggle_large: false,
-    })
-  }
 
         render() {
           return (
             <div className="App">
-                <h1 className="Heading">Available Components:</h1>
-                <div className="ButtonContainer">
+                <h1 className="Heading">React CatchyModals</h1>
+                <h2 className="Subheading">Getting Started: </h2>
+                <p className="Para">React CatchyModals is a collection of delightful
+                and catchy modals that can be customized to fit into
+                any project. The modals have a variety of transitions
+                and styles suited to any in-application notification
+                purpose.</p>
+                <p className="Para">To install, use 'npm install --save react-catchymodals' or 'yarn add react-catchymodals'</p>
            {/*shapes*/}
                   <div className="ButtonContainer-Shape">
                     <h2 className="Subheading">Modals by Shape: </h2>
@@ -139,7 +170,7 @@ class App extends Component {
                            />
                       <Button
                          className="PageButton"
-                         buttonText="Round Modal"
+                         buttonText="Rounded Modal"
                          click={this.showRoundModal}
                           />
                       <Button
@@ -186,91 +217,112 @@ class App extends Component {
                          click={this.showLargeModal}
                           />
                   </div>
+                  <div className="ButtonContainer-Texture">
+                    <h2 className="Subheading">More Modal Styles: </h2>
+                    <Button
+                       className="PageButton"
+                       buttonText="Sleek Modal"
+                       click={this.showSleekModal}
+                         />
+                    <Button
+                       className="PageButton"
+                       buttonText="Colorful Modal"
+                       click={this.showColorfulModal}
+                         />
+                   <Button
+                      className="PageButton"
+                      buttonText="Peaceful Modal"
+                      click={this.showPeacefulModal}
+                        />
+                  </div>
           {/*shapes*/}
                   <Modal
                     className="rec-modal"
-                    title="A Rectangular Modal"
+                    title="Rectangular Modal"
                     hideModal={this.hideRectangleModal}
                     visible={this.state.rec_visible}
-                    children="Lorem ipsum dolor sit amet,
-                              consectetur adipiscing elit,
-                              sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua."/>
+                    children="Just your standard rectangle"
+                    buttonText="Alright"/>
                   <Modal
                     className="round-modal"
-                    title="A Circular Modal"
+                    title="Rounded modal"
                     hideModal={this.hideRoundModal}
                     visible={this.state.round_visible}
-                    children="Lorem ipsum dolor sit amet,
-                              consectetur adipiscing elit,
-                              sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua."/>
+                    children="The hipster version of the rectangular modal."
+                    buttonText="Groovy"/>
                   <Modal
                     className="square-modal"
-                    title="A Square Modal"
+                    title="Square modal"
                     hideModal={this.hideSquareModal}
                     visible={this.state.square_visible}
-                    children="Lorem ipsum dolor sit amet,
-                              consectetur adipiscing elit,
-                              sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua."/>
+                    children="For all of your square announcements"
+                    buttonText="I agree"/>
             {/*styles*/}
                   <Modal
                     className="danger-modal"
-                    title="A Warning Modal"
+                    title="Oh Snap!"
                     hideModal={this.hideDangerModal}
                     visible={this.state.danger_visible}
-                    children="Lorem ipsum dolor sit amet,
-                              consectetur adipiscing elit,
-                              sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua."/>
+                    children="Are you sure you want to do that?"
+                    buttonText="Yes, I'm sure"/>
                   <Modal
                     className="info-modal"
-                    title="An Informational Modal"
+                    title="Check it out!"
                     hideModal={this.hideInfoModal}
                     visible={this.state.info_visible}
-                    children="Lorem ipsum dolor sit amet,
-                              consectetur adipiscing elit,
-                              sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua."/>
+                    children="Take note of this cool piece of info."
+                    buttonText="Sweet!"/>
                   <Modal
                     className="success-modal"
-                    title="A Success Modal"
+                    title="Yessssss"
                     hideModal={this.hideSuccessModal}
                     visible={this.state.success_visible}
-                    children="Lorem ipsum dolor sit amet,
-                              consectetur adipiscing elit,
-                              sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua."/>
+                    children="It worked!"
+                    buttonText="Yay!"/>
             {/*sizes*/}
                   <Modal
                     className="teeny-modal"
-                    title="A Small Modal"
+                    title="Tiny Modal!"
                     hideModal={this.hideSmallModal}
                     visible={this.state.small_visible}
-                    children="Lorem ipsum dolor sit amet,
-                              consectetur adipiscing elit,
-                              sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua."/>
+                    children="I'm cute and tiny!"
+                    buttonText="Awww"/>
                   <Modal
                     className="med-modal"
-                    title="An Medium Modal"
+                    title="Medium modal"
                     hideModal={this.hideMedModal}
                     visible={this.state.med_visible}
-                    children="Lorem ipsum dolor sit amet,
-                              consectetur adipiscing elit,
-                              sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua."/>
+                    children="Happy medium is where it's at."
+                    buttonText="I am sufficiently notified"/>
                   <Modal
                     className="large-modal"
-                    title="A Large Modal"
+                    title="Gigantic modal"
                     hideModal={this.hideLargeModal}
                     visible={this.state.large_visible}
-                    children="Lorem ipsum dolor sit amet,
-                              consectetur adipiscing elit,
-                              sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua."/>
-                  </div>
+                    children="FOR REALLY IMPORTANT STUFF!"
+                    buttonText="Yes, okay I get the message"/>
+
+                    <Modal
+                      className="sleek-modal"
+                      title="A Stylish Arsty modal"
+                      hideModal={this.hideSleekModal}
+                      visible={this.state.sleek_visible}
+                      children="Ooooh, artsy"
+                      buttonText="I approve of this design"/>
+                    <Modal
+                      className="colorful-modal"
+                      title="A fun and colorful modal"
+                      hideModal={this.hideColorfulModal}
+                      visible={this.state.colorful_visible}
+                      children="We're a fun business"
+                      buttonText="Woot!"/>
+                    <Modal
+                      className="peaceful-modal"
+                      title="A peaceful modal"
+                      hideModal={this.hidePeacefulModal}
+                      visible={this.state.peaceful_visible}
+                      children="So zen."
+                      buttonText="Peaceful click"/>
             </div>
           );
         }

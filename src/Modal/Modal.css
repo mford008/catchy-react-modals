@@ -14,7 +14,8 @@
 
 .Modal-body {
   font-size: 14pt;
-  border: solid var(--text_dark) 1px;
+  font-family: Helvetica;
+  border: solid white 3px;
   color: var(--text_light);
   background: white;
   height: 200px;
@@ -38,11 +39,10 @@
   opacity: .75;
 }
 .Modal-button {
-  text-align: right;
-  padding-right: 10px;
+  text-align: center;
 }
 .Modal-header {
-  font-weight: bold;
+  font-size: 20px;
   text-decoration: underline;
 }
 .rec-modal {
@@ -54,7 +54,7 @@
   background: var(--success);
   height: 300px;
   width: 300px;
-  border-radius: 50%;
+  border-radius: 25%;
 }
 
 .square-modal {
@@ -88,4 +88,32 @@
   height: 400px;
   width: 600px;
   font-size: 24pt;
+}
+.sleek-modal {
+  background-image: url('../../demo/src/connectwork.png');
+  height: 400px;
+  width: 600px;
+  font-size: 24pt;
+  font-family: Trebuchet MS;
+}
+.colorful-modal {
+  background-image: url('../../demo/src/memphis-colorful.png');
+  height: 400px;
+  width: 400px;
+  font-size: 24pt;
+  font-family: Trebuchet MS;
+  color: var(--info);
+  border: none;
+  border-radius: 25%;
+}
+.peaceful-modal {
+  background-image: url('../../demo/src/seigaiha.png');
+  height: 400px;
+  width: 400px;
+  font-size: 24pt;
+  font-family: Trebuchet MS;
+  color: var(--text_dark);
+  font-weight: lighter;
+  border: none;
+  border-radius: 25%;
 }

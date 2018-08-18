@@ -13,6 +13,7 @@
   margin: 15px;
   border-radius: 8px;
   text-align: center;
+  font-family: Helvetica;
 }
 .Button.ModalClose {
   border: solid var(--border) 1px;
