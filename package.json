@@ -24,9 +24,9 @@
     "react": "16.x"
   },
   "devDependencies": {
-    "nwb": "0.23.x",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "nwb": "^0.25.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "author": "Maddy Ford",
   "homepage": "./",
